@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+<TextView
+android:id="@+id/wlcmTv"
+android:text="WELCOME TO THE SALARY HIKE CALCULATOR"
+android:layout_marginTop="10px"
+android:layout_marginBottom="15px"
+android:layout_marginLeft="10px"
+android:typeface="monospace"
+android:textStyle="bold"
+android:gravity="center"
+android:textSize="22sp"
+android:textColor="#ee7620"
+>
+</TextView>
+<TableRow>
+<TextView
+android:id="@+id/amtTv"
+android:text="Current(in Lacs):"
+/>
+<EditText
+ android:id="@+id/amtEt"
+ android:inputType="numberDecimal" 
+ android:autoText="false"
+ android:layout_marginBottom="8px"
+ android:layout_weight="1.0"
+ android:layout_width="fill_parent"
+/>
+<TextView
+android:id="@+id/curSalTV"
+android:text=""
+/>
+</TableRow>
+<TableRow>
+<TextView
+android:id="@+id/perTv"
+android:text="Hike%:"
+/>
+<EditText
+android:id="@+id/discEt"
+android:autoText="false"
+android:inputType="numberDecimal"
+android:layout_marginBottom="20px"
+android:layout_weight="1.0"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+>
+</EditText>
+</TableRow>
+<TableRow>
+<TextView
+android:id="@+id/newSal"
+android:text="New Sal(in Lacs):"
+/>
+<EditText
+android:id="@+id/newsalEt"
+android:autoText="false"
+android:inputType="numberDecimal"
+android:layout_marginBottom="20px"
+android:layout_weight="1.0"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+</EditText>
+<TextView
+android:id="@+id/newSalTV"
+android:text=""
+/>
+</TableRow>
+<Button
+android:id="@+id/calcBt"
+android:text="Calculate"
+android:layout_width="wrap_content"
+>
+</Button>
+<Button
+android:id="@+id/clearBt"
+android:text="Clear"
+android:layout_width="wrap_content"
+>
+</Button>
+</TableLayout>
+
+
